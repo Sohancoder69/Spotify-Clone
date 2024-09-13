@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,54 +12,228 @@ body {
 .sidebar {
     width: 300px;
     background: black;
-    position : fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    padding:10px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
 }
 
-.sidebar-nav{
+.sidebar-nav {
     background: #111111;
     border-radius: 10px;
     padding: 20px 10px;
     margin-bottom: 10px;
 }
 
-.sidebar-nav .logo{
-    width:120px;
+.topbar-nav {
+    display: flex;
 }
 
-.sidebar-nav .logo img{
-    width:100%;
+.topbar-nav .logo {
+    width: 55px;
+    margin-left: 1px;
+}
+
+.topbar-nav .logo img {
+    width: 100%;
 }
 
 .sidebar-nav ul {
     list-style: none;
 }
 
-.sidebar-nav ul li{
+.sidebar-nav ul li {
     padding: 10px 20px;
 }
 
-.sidebar-nav ul li a{
+.sidebar-nav ul li a {
     text-decoration: none;
     color: #b3b3b3;
     font-size: 16px;
     font-weight: 600;
 }
 
-.sidebar-nav ul li a i{
+.sidebar-nav ul li a:hover {
+    color: white;
+}
+
+.sidebar-nav ul li a i {
     font-size: 20px;
     margin-right: 10px;
 }
 
-.library::after{
-    content: '+';
-    float: 'right';
-    text-align: center;
-    border-radius: 50%;
+
+.library {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library span {
+    font-size: 16px;
+}
+
+.create-playlist {
+    background: #1a1919;
+    padding: 10px 35px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.sidebar-scroll {
+    height: 120px;
+    overflow-y: auto;
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+    background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+    background: transparent;
+    width: 15px;
+}
+
+.sidebar-scroll:hover::-webkit-scrollbar-thumb {
+    background: rgb(90, 89, 89);
+}
+
+.create-playlist h4 {
+    color: white;
     font-size: 15px;
+    font-weight: 900;
+}
+
+.create-playlist p {
+    color: white;
+    font-size: 12px;
+    margin: 12px 0px;
+    font-weight: 545;
+}
+
+.create-playlist button {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.privacy ul li a {
+    font-size: 11px;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.privacy ul li a:hover {
+    text-decoration: underline;
+    color: #bebcbc;
+}
+
+.privacy ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.privacy ul li {
+    padding: 0px 12px;
+    padding-bottom: 8px;
+}
+
+.eng-button {
+    padding: 10px;
+}
+
+.eng-button button {
+    padding: 6px 15px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-weight: 700;
+    background: transparent;
+    border: 1px solid #a78b8b;
+}
+
+.eng-button button:hover {
+    padding: 7px 16px;
+    border: 1px solid white;
+}
+
+.main-section {
+    margin-left: 300px;
+    height: 100vh;
+    background: #181616;
+}
+
+.main-section .top-nav {
+    padding: 11px 30px;
+    background: #030303;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-section .search-input {
+    background: transparent;
+    display: flex;
+    gap: 8px;
+}
+
+.main-section .search-input input{
+    background: #201f1f;
+    padding: 15px 100px;
+    border: 0;
+    border-radius: 50px;
+}
+
+.main-section .search-input .home-icon i{
+   color: #fff;
+   font-size: 20px;
+}
+
+.main-section .search-input .home-icon{
+    padding: 13px;
+    background-color: #111111;
+    border-radius: 30px;
+}
+
+.main-section .search-input input:hover{
+    background-color: #312e2e;
 }
 
 
+.main-section .top-nav .login-btns .sign-up {
+    background: transparent;
+    color: #b3b3b3;
+    border: 0;
+    font-size: 13px;
+    font-weight: 600;
+    outline: 0;
+    text-decoration: none;
+}
+
+.main-section .top-nav .login-btns .sign-up:hover {
+    color: #fff;
+}
+
+.main-section .top-nav .login-btns .login-btn {
+    padding: 15px 28px;
+    border-radius: 150px;
+    border: 0;
+    outline: 0;
+    color: black;
+    font-weight: 700;
+    background: white;
+    border: 1px solid #bebcbc;
+}
+
+.main-section .top-nav .login-btns {
+    display: flex;
+    gap: 25px;
+}
+.main-section .top-nav .login-btns .login-btn:hover {
+    padding: 16px 28px;
+    background-color: #e9e7e7;
+}

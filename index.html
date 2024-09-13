@@ -1,63 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/images/Spotify_Primary_Logo_RGB_Green.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify Clone</title>
 </head>
+
 <body>
     <div class="sidebar">
-        <div class="sidebar-nav">
+        <div class="topbar-nav">
             <div class="logo">
-                <a href="/images/logo-new.png"> <img src="images/logo-new.png" alt=""></a>
+                <a> <img src="images/spotify.jpeg" alt=""></a>
             </div>
 
-            <ul>
-                <li>
-                    <a href="">
-                        <span><i class="fa-solid fa-house"></i></span>
-                        <span>Home</span>
-                    </a>               
-                 </li>
-                 <li>
-                    <a href="">
-                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <span>Search</span>
-                    </a>               
-                 </li>
-            </ul>
         </div>
 
         <div class="sidebar-nav box2">
             <ul>
                 <li>
                     <a href="">
-                        <span><i class="fa-solid fa-book"></i></span>
-                        <span class="library">Your Library</span>
-                    </a>               
-                 </li>
-                 <li>
-                           <div class="sidebar-scroll">
-                               <div class="create-playlist">
-                                   <h4>Create Your First PlayList</h4>
-                                   <p>It's easy we'll help you</p>
-                                   <button>Create PlayList</button>
-                               </div>
-                               <div class="create-playlist">
-                                <h4> Let's find some podcasts to follow</h4>
-                                <p>We'll keep you updated on new episodes</p>
-                                <button>Browse podcasts </button>
-                            </div>
-                           </div>     
-                 </li>
+                        <div class="library">
+                            <span>Your Library</span>
+                            <span>+</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="sidebar-scroll">
+                        <div class="create-playlist">
+                            <h4>Create your first playlist</h4>
+                            <p>It's easy, we'll help you</p>
+                            <button>Create PlayList</button>
+                        </div>
+                        <div class="create-playlist">
+                            <h4> Let's find some podcasts to follow</h4>
+                            <p>We'll keep you updated on new episodes</p>
+                            <button>Browse podcasts </button>
+                        </div>
+                    </div>
+                </li>
             </ul>
+
+            <div class="privacy">
+                <ul>
+                    <li>
+                        <a href="">Legal</a>
+                        <a href="">Safety&PrivacyCenter</a>
+                        <a href="">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="">Cookies</a>
+                        <a href="">About Ads</a>
+                        <a href="">Accessibilty</a>
+                    </li>
+
+                    <li>
+                        <a href="">Cookies</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="eng-button">
+                <button>
+                    <i class="fa-solid fa-globe"></i>
+                    English
+                </button>
+            </div>
         </div>
-
-
     </div>
+
+    <div class="main-section">
+        <div class="top-nav">
+            
+            <div class="search-input">
+                <div class="home-icon">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <input type="text" placeholder="What do you want to play?">
+            </div>
+            <div class="login-btns">
+                <button class="sign-up">Sign-Up</button>
+                <div>
+                    <button class="login-btn">Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
