@@ -16,13 +16,13 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    padding: 10px;
+    padding: 7px;
 }
 
 .sidebar-nav {
     background: #111111;
-    border-radius: 10px;
-    padding: 20px 10px;
+    border-radius: 8px;
+    padding: 40px 4px;
     margin-bottom: 10px;
 }
 
@@ -75,7 +75,7 @@ body {
 
 .create-playlist {
     background: #1a1919;
-    padding: 10px 35px;
+    padding: 22px 15px;
     margin-bottom: 10px;
     border-radius: 15px;
 }
@@ -168,7 +168,7 @@ body {
 }
 
 .main-section .top-nav {
-    padding: 11px 30px;
+    padding: 9px 30px;
     background: #030303;
     display: flex;
     align-items: center;
@@ -236,4 +236,9 @@ body {
 .main-section .top-nav .login-btns .login-btn:hover {
     padding: 16px 28px;
     background-color: #e9e7e7;
+}
+
+#test::placeholder {
+    color: #b3b3b3;    
+    font-size: 12px;
 }
